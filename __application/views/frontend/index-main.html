@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lost & Found Social Media, Found Your Lost in this Loket">
+    <meta name="author" content="WeFound">
+
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+    <title>WeFound | Share & Find Things Easily</title>
+    <link href="{$host}__assets/frontend/css/default.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <a href="#" data-toggle="sidebar-menu" id="toggle-sidebar-menu" class="visible-xs"><i class="fa fa-bars fa-2x"></i></a>
+			<ul class="nav navbar-nav hidden-xs">
+				<li class="dropdown notifications">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-bullhorn"></i>
+                    </a>
+					<ul class="dropdown-menu">
+						
+					</ul>
+				</li>
+			</ul>
+            <ul class="nav navbar-nav navbar-user">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                         {$auth.real_name} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="">Profile</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="{$host}out">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+			
+            <ul class="nav navbar-nav hidden-xs">
+                <div class="input-group pull-left">
+                    <span class="input-group-addon"><i class="icon-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Lost Or Found">
+                </div>
+            </ul>
+			
+		</div>
+	</div>
+    <div class="sidebar left hidden-xs">
+        <a id="brand" href="">
+			{*<img src='{$host}__assets/frontend/images/logo_wefound.png' style='witdh:150px;height:50px;'>*}
+			WeFound
+		</a>
+		<div id="menu" data-scrollable>
+			<div class="sidebar-block">
+                <div class="profile">
+                    <img src="{$host}__assets/frontend/images/avatar-1.jpg" alt="people" class="img-circle" />
+                    <h4>{$auth.real_name}</h4>
+                </div>
+            </div>		
+			<ul>
+				<li>
+					<a href="" data-toggle="collapse"><i class="icon-ship-wheel"></i> Timeline</a>
+				</li>
+				<li>
+					<a href="profile.html"><i class="icon-user-1"></i> Lost</a>
+				</li>
+				<li class="">
+					<a href="users.html"><i class="fa fa-group"></i> Found</a>
+				</li>
+				<li class="">
+					<a href="messages.html"><i class="icon-comment-fill-1"></i> Big Hero</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+
+    <script src="{$host}__assets/frontend/js/vendor.min.js"></script>
+    <script src="{$host}__assets/frontend/js/scripts.min.js"></script>	
+</body>
+</html>

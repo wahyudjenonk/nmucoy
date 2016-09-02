@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Register WeFound</title>
+	<link href="{$host}__assets/frontend/css/default.css" rel="stylesheet">
+	<style>
+		body{ 
+			background: url({$host}__assets/frontend/images/building2.png) no-repeat center center fixed !important; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body class="login">
+	<div id="content">
+		<div class="container-fluid">
+			<div class="lock-container" style='margin-top:-20px;'>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+                <div class="panel panel-default text-center" >
+                <img src='{$host}__assets/frontend/images/logo_wefound2.png' style='width:200px; height:120px;'/>
+					<div class="panel-body" >
+						<form class="form-horizontal" role="form">
+							<input class="form-control" type="text" placeholder="Your Name">
+							<input class="form-control" type="text" placeholder="Your Email">
+							<input class="form-control" type="password" placeholder="Your Password">
+							<span style='width:70%;important;'>
+							{$html_captcha}
+							</span>
+							<a type='submit' class="btn btn-primary">Register <i class="fa fa-fw fa-key"></i></a>
+						</form>
+						<br/>
+						Have Account ? <a href="{$host}" class="forgot-password" style='display:inline !important;'>Login</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <script src="{$host}__assets/frontend/js/vendor.min.js"></script>
+    <script src="{$host}__assets/frontend/js/scripts.min.js"></script>
+</body>
+</html>

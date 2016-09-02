@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WeFound | Share & Find Things Easily</title>
+	<link href="{$host}__assets/frontend/css/default.css" rel="stylesheet">
+	<style>
+		body{ 
+			background: url({$host}__assets/frontend/images/building1.png) no-repeat center center fixed !important; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body class="login">
+	<div id="content">
+		<div class="container-fluid">
+			<div class="lock-container">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+                <div class="panel panel-default text-center">
+                <img src='{$host}__assets/frontend/images/logo_wefound2.png' style='width:200px; height:120px;'/>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form" action="{$host}in" method="post">
+							<input class="form-control" type="text" name='usr' placeholder="Your Email">
+							<input class="form-control" type="password" name='pss' placeholder="Your Password">
+							<input type='submit' class="btn btn-primary" value='Login'> {*<i class="fa fa-fw fa-unlock-alt"></i>*}
+						</form>
+						{if isset($error)}
+							<div style="text-align:center;margin-top:20px;margin-bottom:20px;">
+								<span style="color:red;"><b><i>{$error}</i></b></span>
+							</div>
+						{/if}	
+						<a href="#" class="forgot-password" style='margin-bottom:5px;'>Forgot password</a>
+						New to WeFound ? <a href="{$host}register" class="forgot-password" style='display:inline !important;'>Create Account</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <script src="{$host}__assets/frontend/js/vendor.min.js"></script>
+    <script src="{$host}__assets/frontend/js/scripts.min.js"></script>
+</body>
+</html>
